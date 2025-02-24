@@ -43,7 +43,7 @@ runs:
         cd "${{ inputs.test-dir }}"
         rm -f tb.vcd
         make clean
-        GATES=yes make
+        GATES=yes make test
 
     - name: Upload VCD
       if: always()
